@@ -1,7 +1,6 @@
 mainhandle = handles.mainhandle;
 
-sel = strel('sphere', 5);
-mainhandle.outputim = imdilate(mainhandle.inputim, sel);
+mainhandle.outputim = edge(mainhandle.inputim, 'canny');
 
 % add salt and pepper noise to input image in main window
 outputim = imresize(mainhandle.outputim, mainhandle.viewsize, 'bilinear');

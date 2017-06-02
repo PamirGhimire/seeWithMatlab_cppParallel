@@ -22,7 +22,7 @@ function varargout = oneViewProcessPane(varargin)
 
 % Edit the above text to modify the response to help oneViewProcessPane
 
-% Last Modified by GUIDE v2.5 30-May-2017 13:40:32
+% Last Modified by GUIDE v2.5 02-Jun-2017 19:31:17
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -79,13 +79,13 @@ function varargout = oneViewProcessPane_OutputFcn(hObject, eventdata, handles)
 % Get default command line output from handles structure
 varargout{1} = handles.output;
 
-
+% CLOSE BUTTON
 % --- Executes on button press in pushbutton1.
 function pushbutton1_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton1 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-
+closereq;
 
 % --- Executes on button press in pushbutton2.
 function pushbutton2_Callback(hObject, eventdata, handles)
@@ -142,3 +142,73 @@ function radiobutton5_Callback(hObject, eventdata, handles)
 
 % Hint: get(hObject,'Value') returns toggle state of radiobutton5
 radioButton_dilate;
+
+% ERODE:
+% --- Executes on button press in radiobutton6.
+function radiobutton6_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton6 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton6
+radioButton_erode;
+
+% OPEN:
+% --- Executes on button press in radiobutton7.
+function radiobutton7_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton7 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton7
+radioButton_open;
+
+% CLOSE:
+% --- Executes on button press in radiobutton10.
+function radiobutton10_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton10 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton10
+radioButton_close;
+
+% GAUSSIAN BLUR
+% --- Executes on button press in radiobutton11.
+function radiobutton11_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton11 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton11
+radioButton_gaussianBlur;
+
+% SOBEL OPERATOR
+% --- Executes on button press in radiobutton12.
+function radiobutton12_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton12 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton12
+radioButton_sobel;
+
+% LAPLACIAN OF IMAGE:
+% --- Executes on button press in radiobutton13.
+function radiobutton13_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton13 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton13
+radioButton_laplacian;
+
+% CANNY EDGES:
+% --- Executes on button press in radiobutton14.
+function radiobutton14_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton14 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton14
+radioButton_canny;

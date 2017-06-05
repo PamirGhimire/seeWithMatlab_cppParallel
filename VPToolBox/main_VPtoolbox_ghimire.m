@@ -122,9 +122,10 @@ function axes2_CreateFcn(hObject, eventdata, handles)
 
 % Hint: place code in OpeningFcn to populate axes2
 
-
+% MULTI-VIEW PROCESSES PANE
 % --- Executes on button press in pushbutton3.
 function pushbutton3_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton3 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+mvp = multiViewProcessesPane({handles});

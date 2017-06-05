@@ -22,7 +22,7 @@ function varargout = oneViewProcessPane(varargin)
 
 % Edit the above text to modify the response to help oneViewProcessPane
 
-% Last Modified by GUIDE v2.5 02-Jun-2017 19:31:17
+% Last Modified by GUIDE v2.5 05-Jun-2017 17:20:16
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -212,3 +212,42 @@ function radiobutton14_Callback(hObject, eventdata, handles)
 
 % Hint: get(hObject,'Value') returns toggle state of radiobutton14
 radioButton_canny;
+
+
+% --- Executes on button press in radiobutton17.
+function radiobutton17_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton17 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton17
+
+% HOUGH LINES
+% --- Executes on button press in radiobutton15.
+function radiobutton15_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton15 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton15
+radioButton_houghLines;
+
+% HOUGH CIRCLES
+% --- Executes on button press in radiobutton16.
+function radiobutton16_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton16 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton16
+radioButton_houghCircles;
+
+% HARRIS CORNERS
+% --- Executes on button press in radiobutton18.
+function radiobutton18_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton18 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton18
+radioButton_harrisCorners;

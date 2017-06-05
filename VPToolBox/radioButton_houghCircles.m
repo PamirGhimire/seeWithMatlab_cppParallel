@@ -1,4 +1,6 @@
 mainhandle = handles.mainhandle;
+axes(mainhandle.axes2); hold off;
+
 warning off;
 A = mainhandle.inputim;
 
@@ -22,3 +24,5 @@ viscircles(centersDark, radiiDark,'LineStyle','--');
 handles.outputim = mainhandle.outputim;
 % Update handles structure
 guidata(hObject, handles);
+
+figure(handles.figure1)

@@ -22,7 +22,7 @@ function varargout = oneViewProcessPane(varargin)
 
 % Edit the above text to modify the response to help oneViewProcessPane
 
-% Last Modified by GUIDE v2.5 05-Jun-2017 17:20:16
+% Last Modified by GUIDE v2.5 05-Jun-2017 19:49:46
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -251,3 +251,41 @@ function radiobutton18_Callback(hObject, eventdata, handles)
 
 % Hint: get(hObject,'Value') returns toggle state of radiobutton18
 radioButton_harrisCorners;
+
+% SURF features
+% --- Executes on button press in radiobutton20.
+function radiobutton20_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton20 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton20
+radioButton_surf;
+
+% SIFT features
+% --- Executes on button press in radiobutton19.
+function radiobutton19_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton19 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton19
+radioButton_sift;
+
+% FAST KEYPOINTS
+% --- Executes on button press in radiobutton21.
+function radiobutton21_Callback(hObject, eventdata, handles)
+% hObject    handle to radiobutton21 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of radiobutton21
+radioButton_fastKeypoints;
+
+% SAVE RESULT BUTTON
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+button_saveResult;

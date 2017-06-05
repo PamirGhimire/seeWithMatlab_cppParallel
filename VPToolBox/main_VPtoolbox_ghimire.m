@@ -22,7 +22,7 @@ function varargout = main_VPtoolbox_ghimire(varargin)
 
 % Edit the above text to modify the response to help main_VPtoolbox_ghimire
 
-% Last Modified by GUIDE v2.5 30-May-2017 12:00:14
+% Last Modified by GUIDE v2.5 05-Jun-2017 19:47:10
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -121,3 +121,10 @@ function axes2_CreateFcn(hObject, eventdata, handles)
 % handles    empty - handles not created until after all CreateFcns called
 
 % Hint: place code in OpeningFcn to populate axes2
+
+
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)

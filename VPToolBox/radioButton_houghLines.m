@@ -1,4 +1,6 @@
 mainhandle = handles.mainhandle;
+axes(mainhandle.axes2); hold off;
+
 
 % find edges in the input image
 BW = edge(mainhandle.inputim, 'canny');
@@ -35,4 +37,6 @@ plot(xy_long(:,1),xy_long(:,2),'LineWidth',2,'Color','cyan', 'parent', mainhandl
 handles.outputim = getimage(mainhandle.axes2);
 % Update handles structure
 guidata(hObject, handles);
+
+figure(handles.figure1)
 

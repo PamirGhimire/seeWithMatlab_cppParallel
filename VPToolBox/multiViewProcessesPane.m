@@ -22,7 +22,7 @@ function varargout = multiViewProcessesPane(varargin)
 
 % Edit the above text to modify the response to help multiViewProcessesPane
 
-% Last Modified by GUIDE v2.5 05-Jun-2017 22:31:35
+% Last Modified by GUIDE v2.5 06-Jun-2017 23:44:23
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -136,9 +136,18 @@ function radiobutton4_Callback(hObject, eventdata, handles)
 % Hint: get(hObject,'Value') returns toggle state of radiobutton4
 radioButton_siftMatching;
 
-
+% Fundamental matrix button
 % --- Executes on button press in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbutton4 (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+button_funmatSurf;
+
+% CAMERA CALIBRATOR APP
+% --- Executes on button press in pushbutton5.
+function pushbutton5_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton5 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+button_cameracalib;

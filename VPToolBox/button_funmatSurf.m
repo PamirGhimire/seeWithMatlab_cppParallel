@@ -14,9 +14,10 @@ indexPairs = matchFeatures(f1,f2) ;
 matchedPoints1 = vpts1(indexPairs(:,1));
 matchedPoints2 = vpts2(indexPairs(:,2));
 
-%Display the matching points. The data still includes several outliers, 
-%but you can see the effects of rotation and scaling on the display of 
-%matched features.
+[fLMedS, inliers] = estimateFundamentalMatrix(matchedPoints1,matchedPoints2,'NumTrials',2000);
+
 axes(handles.axes1)
-showMatchedFeatures(I1,I2,matchedPoints1,matchedPoints2, 'montage');
-legend('matched points 1','matched points 2');
+showMatchedFeatures(I1, I2, matchedPoints1(inliers,:),matchedPoints2(inliers,:),'montage','PlotOptions',{'ro','go','y--'});
+title('Point matches after outliers were removed');
+
+estimated_fundamental_matrix = fLMedS

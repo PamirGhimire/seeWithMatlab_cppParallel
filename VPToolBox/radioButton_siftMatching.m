@@ -42,8 +42,10 @@ im3 = appendimages(im1,im2);
 % Show a figure with lines joining the accepted matches.
 %figure('Position', [100 100 size(im3,2) size(im3,1)]);
 axes(handles.axes1);
+axis off
 colormap('gray');
 imagesc(im3);
+axis off
 hold on;
 cols1 = size(im1,2);
 for i = 1: size(des1,1)

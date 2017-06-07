@@ -9,7 +9,7 @@ if size(im1, 3) > 1
     im1 = rgb2gray(im1);
 end
 
-handles.im1 = double(im1);
+handles.im1 = im1;
 
 % Update handles structure
 guidata(hObject, handles);

@@ -1,5 +1,12 @@
 # seeWithMatlab_cppParallel
 GUI based computer vision toolbox developed using Qt(5.7) and OpenCv(3.2).
+Some of the functionalities mentioned below may not be available yet. They might be in the future.
+
+Requirements:
+
+- MATLAB ( >= 2016 a)
+
+- Computer vision toolbox (of MATLAB)
 
 The GUI offers following functionalities:
 
